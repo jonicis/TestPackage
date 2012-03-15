@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/ContentFramework.Core.Models">
+  <Description>The Windows Azure Training Course includes a comprehensive set of hands-on labs and videos that are designed to help you quickly learn how to use Windows Azure services and SQL Azure.</Description>
+  <Id>DemoTestJoniTrainingCourse</Id>
+  <Name>Demo Test Training Course</Name>
+  <Version>1.0</Version>
+  <DownloadUrl>http://go.microsoft.com/fwlink/?LinkID=130354</DownloadUrl>
+  <Logo>Assets\Resources\WinAzurePlatFlagLogo.png</Logo>
+
+  <Overview>
+    <Author>
+      <Blog></Blog>
+      <Email></Email>
+      <Name>Microsoft Developer and Platform Evangelism</Name>
+    </Author>
+    <Description>The Windows Azure Training Course includes a comprehensive set of hands-on labs and videos that are designed to help you quickly learn how to use Windows Azure and SQL Azure.</Description>
+    <Document></Document>
+    <Title>Windows Azure Training Course</Title>
+    <Version>January 2012 Update</Version>
+  </Overview>
+
+  <AudiencePrerequisites>Experience using Visual Studio and the .NET Framework</AudiencePrerequisites>
+
+  <Prerequisites>
+    <Group Name="Prerequisites" Order="1" Description="The hands-on labs for this training course require the following prerequisite software to be installed and configured on your machine:">
+      <Prerequisites>
+        <Prerequisite Name="Microsoft .NET Framework 4.0" Link="http://www.microsoft.com/downloads/details.aspx?FamilyID=9cfb2d51-5ff4-4491-b0e5-b386f32c0992" Description="" />
+        <Prerequisite Name="Visual Studio 2010" Link="http://www.microsoft.com/visualstudio/en-us/products/2010-editions" Description="" />
+        <Prerequisite Name="Windows Powershell" Link="http://www.microsoft.com/windowsserver2003/technologies/management/powershell/download.mspx" Description="" />
+        <Prerequisite Name="Microsoft Internet Information Server 7" Link="http://www.iis.net/" Description="" />
+		<Prerequisite Name="ASP.NET MVC 3" Link="http://www.microsoft.com/web/gallery/install.aspx?appid=MVC3" Description="" />
+		<Prerequisite Name="ASP.NET MVC 4 - Developer Preview" Link="http://www.microsoft.com/download/en/details.aspx?id=27419" Description="" />
+        <Prerequisite Name="Windows Azure Tools for Microsoft Visual Studio 1.6" Link="http://www.microsoft.com/web/gallery/install.aspx?appid=WindowsAzureToolsVS2010" Description="" />
+        <Prerequisite Name="Windows Azure Libraries for .NET 1.6" Link="http://www.microsoft.com/web/gallery/install.aspx?appid=WindowsAzureLibrariesNET" Description="" />
+        <Prerequisite Name="Microsoft SQL Server Express 2008 (or later)" Link="http://www.microsoft.com/express/sql/download/" Description="" />
+        <Prerequisite Name="SQL Server Management Studio 2008 R2 Express Edition" Link="http://www.microsoft.com/express/Database/InstallOptions.aspx" Description="" />
+		<Prerequisite Name="Microsoft SQL Server Data Tools" Link="http://www.microsoft.com/web/gallery/install.aspx?appid=SSDT" Description="" />
+		<Prerequisite Name="SQL Server 2012 Business Intelligence Development Studio" Link="http://www.microsoft.com/sqlserver/en/us/get-sql-server/try-it.aspx" Description="" />
+        <Prerequisite Name="Microsoft Windows Identity Foundation Runtime" Link="http://support.microsoft.com/kb/974405" Description="" />
+        <Prerequisite Name="Microsoft Windows Identity Foundation SDK" Link="http://www.microsoft.com/downloads/details.aspx?FamilyID=c148b2df-c7af-46bb-9162-2c9422208504" Description="" />
+		<Prerequisite Name="Windows Azure HPC Scheduler SDK" Link="http://www.microsoft.com/download/en/details.aspx?id=28015" Description="" />
+		<Prerequisite Name="Microsoft HPC Pack 2008 R2 Client Components" Link="http://www.microsoft.com/download/en/details.aspx?id=17017" Description="" />        
+		<Prerequisite Name="Microsoft HPC Pack 2008 R2 MS-MPI Redistributable Pack" Link="http://www.microsoft.com/download/en/details.aspx?id=14737" Description="" />        
+      </Prerequisites>
+    </Group>
+  </Prerequisites>
+
+  <RelatedResources>
+    <Resource>
+      <Title>Learn more about Windows Azure</Title>
+      <Link>http://www.microsoft.com/windowsazure/</Link>
+      <Description>Learn more about Windows Azure</Description>
+    </Resource>
+    <Resource>
+      <Title>Sign up now for the free trial</Title>
+      <Link>http://www.microsoft.com/windowsazure/free-trial/</Link>
+      <Description>Sign up now for the free trial</Description>
+    </Resource>
+    <Resource>
+      <Title>Get the tools and SDK</Title>
+      <Link>http://www.microsoft.com/windowsazure/sdk/</Link>
+      <Description>Get the tools and SDK</Description>
+    </Resource>
+    <Resource>
+      <Title>Windows Azure Team Blog</Title>
+      <Link>http://blogs.msdn.com/b/windowsazure/</Link>
+      <Description>Blog of the Windows Azure Team.</Description>
+    </Resource>
+  </RelatedResources>
+
+ <Units xmlns:d="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+    <Unit>
+      <Description>
+        Windows Azure is an internet-scale cloud computing and services platform hosted in Microsoft data centers, which provides an operating system and a set of developer services which can be used individually or together. It gives developers the choice to build web applications; applications running on connected devices, PCs, or servers; or hybrid solutions offering the best of both worlds. New or enhanced applications can be built using existing skills with the Visual Studio development environment and the .NET Framework. With its standards-based and interoperable approach, the services platform supports multiple internet protocols, including HTTP, REST, SOAP, and plain XML
+      </Description>
+      <Id>WindowsAzure</Id>
+      <Name>Windows Azure</Name>
+	  <Thumbnail>Assets\Resources\WinAzureDeployPlatFlagLogo85x64.png</Thumbnail>
+      <Labs>
+	    <Lab>git@github.com:jonicis/TestLab.git</Lab>
+      </Labs>
+      <Demos>      
+      </Demos>
+      <Presentations></Presentations>
+      <Videos>        
+      </Videos>
+    </Unit>
+  </Units> 
+  <CustomProperties>
+    <Property Name="AzureHomeLink" Value="http://www.microsoft.com/windowsazure/" />
+    <Property Name="AzureMsdnLink" Value="http://www.microsoft.com/windowsazure/learn/" />
+  </CustomProperties>  
+  <Feedback>To give feedback please write to azcfeed@microsoft.com</Feedback>
+</Package>

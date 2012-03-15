@@ -1,0 +1,285 @@
+﻿<#@ template language="C#" debug="True" #>
+<#@ output extension="htm" #>
+<#@ assembly name="System.dll" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ assembly name="ContentFramework.Model.dll" #>
+<#@ import namespace="ContentFramework.Model" #>
+<#@ import namespace="System.Linq" #>
+<#@ property name="Package" processor="PropertyProcessor" #>
+<#
+var currentPage = "ChangeLog";
+#>
+<#@ include file="Master.Header.include.tt" #>
+<div class="genericInnerWrapper">
+
+	<h1>Change Log</h1>
+    <p>These are the changes included in this release:</p>
+    
+		<h2>March 2012 Update</h2>
+		<ul class="getStartedList">
+		  <li class="no-border">
+			<strong>Introduction to Windows Azure</strong>
+			<ul>
+			  <li>Hands-On lab</li>
+			</ul>
+		  </li>	
+		  <li class="no-border">
+			<strong>Building ASP.NET Applications with Windows Azure</strong>
+			<ul>
+			  <li>Hands-On lab</li>
+			</ul>
+		  </li>
+		  <li class="no-border">
+			<strong>Exploring Windows Azure Storage</strong>
+			<ul>
+			  <li>Hands-On lab</li>
+			</ul>
+		  </li>		
+		  <li class="no-border">
+			<strong>Introduction to SQL Azure</strong>
+			<ul>
+			  <li>Hands-On lab</li>
+			</ul>
+		  </li>		
+		  <li class="no-border">
+			<strong>Deploying Applications in Windows Azure</strong>
+			<ul>
+			  <li>Hands-On lab</li>
+			</ul>
+		  </li>		
+		  <li class="no-border">
+			<strong>Building Windows Azure Apps with Caching service</strong>
+			<ul>
+			  <li>Hands-On lab</li>
+			</ul>
+		  </li>		
+		  <li class="no-border">
+			<strong>Introduction to the Access Control Service</strong>
+			<ul>
+			  <li>Hands-On lab</li>
+			</ul>
+		  </li>		
+		  <li class="no-border">
+			<strong>Federated Authentication in a Windows Azure Web Role Application</strong>
+			<ul>
+			  <li>Hands-On lab</li>
+			</ul>
+		  </li>		
+		  <li class="no-border">
+			<strong>Advanced Web and Worker Role Management</strong>
+			<ul>
+			  <li>Hands-On lab</li>
+			</ul>
+		  </li>		  		
+		  <li class="no-border">
+			<strong>Windows Azure Traffic Manager</strong>
+			<ul>
+			  <li>Hands-On lab</li>
+			</ul>
+		  </li>
+		<li class="no-border">
+		   <strong>Advanced SQL Server Databases</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Advanced Web and Worker Role Management</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Application Scenarios</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Asynchronous Workload Handling in Windows Azure</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>BLAST Parametric Sweep Application with the Windows Azure HPC Scheduler</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Building a Simple SQL Azure App</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Building a Social Game with Windows Azure</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Building and Running HPC Apps In Windows Azure</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Building ASP.NET Applications with Windows Azure</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Building ASP.NET Apps</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Building Device and Cloud Applications</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Building Global and Highly Available Apps</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Building Loosely Coupled Apps In Windows Azure</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Building Scalabe Web Apps with Windows Azure</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Building Social Games with Windows Azure</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Building Web APIs in Windows Azure</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Building Windows Azure Apps with Caching service</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Connecting Applications with Windows Azure Service Bus</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Connecting Apps with Windows Azure Connect</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Connecting Cloud and On-Premises: Applications Using Windows Azure Virtual Network</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Connecting to SQL Azure</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Creating Objects in SQL Azure</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Debugging and Troubleshooting Windows Azure Applications</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Debugging Applications in Windows Azure</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Delivering Notifications with Windows Azure</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Deploying and Managing SQL Azure Databases with Visual Studio 2010 Data-tier Applications</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Deploying Applications in Windows Azure</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Deploying SOA Services with PowerShell to the Windows Azure HPC Scheduler</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Deploying Windows Azure Services</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Eventing On The AppFabric Service Bus</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Exploring Windows Azure Storage</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Federated Authentication in a Windows Azure Web Role Application</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Getting Started with Windows Azure</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+		<li class="no-border">
+		   <strong>Hadoop In Windows Azure</strong>
+		   <ul>
+			 <li>Presentation</li>
+		   </ul>
+			</li>
+</div>
+<#@ include file="Master.Footer.include.tt" #>

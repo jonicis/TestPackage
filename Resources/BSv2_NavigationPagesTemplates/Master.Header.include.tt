@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Windows Azure Training Kit - <#= currentPage #></title>
+    <!-- Global CSS -->
+    <link rel="Stylesheet" type="text/css" media="all" href="Assets/NavSite/styles/master.css" />
+ 
+
+    <!--[if gte IE 7]> 
+		<link href="Assets/NavSite/styles/ie7.css" rel="Stylesheet" media="all" />
+	<![endif]-->
+    <!--[if lte IE 6]> 
+		<link href="Assets/NavSite/styles/ie6.css" rel="Stylesheet" media="all" />
+	<![endif]-->
+    <!--WebTrends tag-->
+    <style type="text/css">
+        .ctl00_TopNavMenu_0
+        {
+            background-color: white;
+            visibility: hidden;
+            display: none;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        .ctl00_TopNavMenu_1
+        {
+            text-decoration: none;
+        }
+        .ctl00_TopNavMenu_2
+        {
+        }
+    </style>
+</head>
+<body>
+    <a name="top"></a>
+    <div id="outerWrapper">
+        <div id="wrapper" class="landingPage getStartedPage">
+            <div id="whiteBkgdStrip">
+            </div>
+            <div class="header">
+                <div class="mainHomepageTitle">		
+					<div class="mainHomepageSubTitle">
+						Training Kit - <#= Package.Overview.Version #>
+					</div>
+					<div class="changeLogLink">
+						<a href="Agenda.htm">Training Agenda</a> | 
+						<a href="http://go.microsoft.com/fwlink/?LinkId=131459">Online Resources</a> | 
+						<a href="ChangeLog.htm">Change Log</a>
+					</div>
+				</div>
+				<div class="nav-menu-header">
+					<#@ include file="Master.Navigator.include.tt" #>
+				</div>
+            </div>			
+            <div class="contentWrapper">

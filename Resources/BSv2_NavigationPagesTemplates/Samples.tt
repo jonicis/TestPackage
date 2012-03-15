@@ -1,0 +1,159 @@
+﻿<#@ template language="C#" debug="True" #>
+<#@ output extension="htm" #>
+<#@ assembly name="System.dll" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ assembly name="ContentFramework.Model.dll" #>
+<#@ import namespace="ContentFramework.Model" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Linq" #>
+<#@ property name="Package" processor="PropertyProcessor" #>
+<#
+var currentPage = "Samples";
+#>
+<#@ include file="Master.Header.include.tt" #>
+<div class="genericInnerWrapper">
+	<h1>Samples &amp; Tools</h1>
+	<p>This page lists a few of the key Windows Azure toolkits, samples, and tools.  Follow the links below to download the latest versions.</p>
+	<div class="hr">
+	<img src="Assets/NavSite/images/hr-gradient-right-side.jpg" /></div>
+	<ul class="linkList allItemsList" id="CaseStudiesList">
+		<li>
+			<div class="companyLogo"><img alt="BlobShare" src="Assets/NavSite/images/blobshare.jpg" /></div>
+			<p>
+				<span class="title"><a href="http://blobshare.codeplex.com/" target="_blank">BlobShare</a></span><br />
+				The BlobShare Sample is a simple file sharing application that demonstrates the storage services of the Windows Azure Platform, together with the authentication and authorization capabilities of Access Control Service (ACS). 
+				</span>
+				<br />
+				<br />Download the BlobShare Sample from <a href="http://blobshare.codeplex.com/">http://blobshare.codeplex.com/</a>
+			</p>
+		</li>
+		<li class="hr"><img src="Assets/NavSite/images/hr-gradient-right-side.jpg" /></li>
+		<li>
+			<div class="companyLogo"><img alt="PhluffyFotos" src="Assets/NavSite/images/phluffyfotos.png" /></div>
+			<p>
+				<span class="title"><a href="http://phluffyfotos.codeplex.com/" target="_blank">PhluffyFotos</a></span><br />
+				PhluffyFotos is a Web 2.0 Picture Gallery Service where users can upload their pictures from the web or mobile device. This sample is designed to demonstrate the core features of Windows Azure. Users can upload, tag, and share photos in this sample. 
+				</span>
+				<br />
+				<br />Download the PhluffyFotos Sample from <a href="http://phluffyfotos.codeplex.com/">http://phluffyfotos.codeplex.com/</a>
+			</p>
+		</li>			
+		<li class="hr"><img src="Assets/NavSite/images/hr-gradient-right-side.jpg" /></li>
+		<li>
+			<div class="companyLogo"><img alt="Windows Azure Toolkit for Windows Phone" src="Assets/NavSite/images/watwp7.png" /></div>
+			<p>
+				<span class="title"><a href="http://go.microsoft.com/fwlink/?LinkID=214684" target="_blank">Windows Azure Toolkit for Windows Phone</a></span><br />					
+				The Windows Azure Toolkit for Windows Phone is designed to make it easier for you to build mobile applications that leverage cloud services running in Windows Azure. The toolkit includes Visual Studio project templates for Windows Phone and Windows Azure, class libraries optimized for use on the phone, sample applications, and documentation. 
+				</span>
+				<br />
+				<br />Download the Windows Azure Toolkit for Windows Phone from <a href="http://go.microsoft.com/fwlink/?LinkID=214684">http://go.microsoft.com/fwlink/?LinkID=214684</a>
+			</p>
+		</li>		
+		<li class="hr"><img src="Assets/NavSite/images/hr-gradient-right-side.jpg" /></li>
+		<li>
+			<div class="companyLogo"><img alt="Windows Azure Toolkit for iOS" src="Assets/NavSite/images/watios.jpg" /></div>
+			<p>
+				<span class="title"><a href="http://go.microsoft.com/fwlink/?LinkID=234566" target="_blank">Windows Azure Toolkit for iOS</a></span><br />					
+				The Windows Azure Toolkit for iOS is a toolkit for developers to make it easy to access Windows Azure storage services from native iOS applications. The toolkit can be used for both iPhone and iPad applications, developed using Objective-C and XCode. 
+				</span>
+				<br />
+				<br />Download the Windows Azure Toolkit for iOS from <a href="http://go.microsoft.com/fwlink/?LinkID=234566">http://go.microsoft.com/fwlink/?LinkID=234566</a>
+			</p>
+		</li>
+		<li class="hr"><img src="Assets/NavSite/images/hr-gradient-right-side.jpg" /></li>
+		<li>
+			<div class="companyLogo"><img alt="Windows Azure Toolkit for Android" src="Assets/NavSite/images/watandroid.png" /></div>
+			<p>
+				<span class="title"><a href="http://go.microsoft.com/fwlink/?LinkID=234567" target="_blank">Windows Azure Toolkit for Android</a></span><br />					
+				The Windows Azure Toolkit for Android is a toolkit for developers to make it easy to work with Windows Azure from native Android applications. The toolkit can be used for native Android applications developed using Eclipse and the Android SDK. 
+				</span>
+				<br />
+				<br />Download the Windows Azure Toolkit for Android from <a href="http://go.microsoft.com/fwlink/?LinkID=234567">http://go.microsoft.com/fwlink/?LinkID=234567</a>
+			</p>
+		</li>
+		<li class="hr"><img src="Assets/NavSite/images/hr-gradient-right-side.jpg" /></li>
+				<li>
+			<div class="companyLogo"><img alt="Windows Azure Toolkit for Windows 8" src="Assets/NavSite/images/watw8.png" /></div>
+			<p>
+				<span class="title"><a href="http://watwindows8.codeplex.com/" target="_blank">Windows Azure Toolkit for Windows 8</a></span><br />					
+				Building a cloud service to support rich Windows Metro style apps is even easier with the Windows Azure Toolkit for Windows 8. This toolkit has all the tools to make it easy to develop a Windows Azure service and deploy it to your users. In addition to documentation, this toolkit includes Visual Studio project templates for a sample Metro style app and a Windows Azure cloud project. 
+				</span>
+				<br />
+				<br />Download the Windows Azure Toolkit for Windows 8 from <a href="http://watwindows8.codeplex.com/">http://watwindows8.codeplex.com/</a>
+			</p>
+		</li>
+		<li class="hr"><img src="Assets/NavSite/images/hr-gradient-right-side.jpg" /></li>
+				<li>
+			<div class="companyLogo"><img alt="Windows Azure Toolkit for Social Games" src="Assets/NavSite/images/watsg.jpg" /></div>
+			<p>
+				<span class="title"><a href="http://watgames.codeplex.com/" target="_blank">Windows Azure Toolkit for Social Games</a></span><br />					
+				The Windows Azure Toolkit for Social Games is a set of guidance, samples, and tools that helps developers quickly get started building a casual or social game on Windows Azure. 
+				</span>
+				<br />
+				<br />Download the Windows Azure Toolkit for Social Games from <a href="http://watgames.codeplex.com/">http://watgames.codeplex.com/</a>
+			</p>
+		</li>
+
+		<li class="hr"><img src="Assets/NavSite/images/hr-gradient-right-side.jpg" /></li>
+				<li>
+			<div class="companyLogo"><img alt="Windows Azure Accelerator for Web Roles" src="Assets/NavSite/images/waawebroles.png" /></div>
+			<p>
+				<span class="title"><a href="http://waawebroles.codeplex.com/" target="_blank">Windows Azure Accelerator for Web Roles</a></span><br />					
+				The Windows Azure Accelerator for Web Roles makes it quick and easy for you to deploy one or more websites across multiple Web Role instances using Web Deploy. 
+				</span>
+				<br />
+				<br />Download the Windows Azure Accelerator for Web Roles from <a href="http://waawebroles.codeplex.com/">http://waawebroles.codeplex.com/</a>
+			</p>
+		</li>		
+		<li class="hr"><img src="Assets/NavSite/images/hr-gradient-right-side.jpg" /></li>
+				<li>
+			<div class="companyLogo"><img alt="Windows Azure Service Management CmdLets" src="Assets/NavSite/images/cmdlets.png" /></div>
+			<p>
+				<span class="title"><a href="http://wappowershell.codeplex.com/" target="_blank">Windows Azure Service Management CmdLets </a></span><br />					
+				A set of PowerShell cmdlets wrapping the Windows Azure Service Management API. These cmdlets make it simple to script out your deployments, upgrades, and scaling of your Windows Azure applications. 
+ </span>
+				<br />
+				<br />Download the Windows Azure Service Management CmdLets from <a href="http://wappowershell.codeplex.com/">http://wappowershell.codeplex.com/</a>
+			</p>
+		</li>
+		<li class="hr"><img src="Assets/NavSite/images/hr-gradient-right-side.jpg" /></li>
+		<!-- MAY NEED UPDATING 
+		<li>
+			<div class="companyLogo"><img alt="PhluffyFotos" src="Assets/NavSite/images/phluffy.png" /></div>
+			<p>
+				<span class="title"><a href="http://phluffyfotos.codeplex.com/" target="_blank">PhluffyFotos</a></span><br />					
+				PhluffyFotos is a Web 2.0 Picture Gallery Service where users can upload their pictures from the web or mobile device. This sample is designed to demonstrate the core features of Windows Azure. Users can upload, tag, and share photos in this sample. A Silverlight Album viewer is also included (<a href="http://www.codeplex.com/SlideShow2">http://www.codeplex.com/SlideShow2</a> to make browsing photos easy. 
+				The demo utilizes several technologies including: ASP.NET MVC, Silverlight, and Windows Azure tables, blobs, and queues. In this sample, you will see how to pull together both web and worker roles to build cloud applications.  </span>
+				<br />
+				<br />Download PhluffyFotos from <a href="http://phluffyfotos.codeplex.com/">http://phluffyfotos.codeplex.com/</a>
+			</p>
+		</li>
+		-->
+		<li class="hr"><img src="Assets/NavSite/images/hr-gradient-right-side.jpg" /></li>
+		<li>
+			<div class="companyLogo"><img alt="BidNow" src="Assets/NavSite/images/demo_bid_now_thumbnail.png" /></div>
+			<p>
+				<span class="title"><a href="http://bidnow.codeplex.com" target="_blank">BidNow</a></span><br />					
+				BidNow is an online auction site designed to demonstrate how you can build highly scalable consumer applications running in Windows Azure. 
+				<br />
+				<br />In addition to Windows Azure Web and Worker roles, BidNow uses SQL Azure for relational data storage, Access Control for authentication and authorization, Caching to store reference and activity data, OData services to extend reach, and a Windows Phone 7 client to demonstrate how to use cloud services from a mobile device. 
+				<br />
+				<br />Download BidNow from <a href="http://bidnow.codeplex.com">http://bidnow.codeplex.com</a>
+			</p>
+		</li>
+
+		<li class="hr"><img src="Assets/NavSite/images/hr-gradient-right-side.jpg" /></li>
+		<li>
+			<div class="companyLogo"><img alt="FabrikamShipping SaaS" src="Assets/NavSite/images/demo_fabrikamshipping_thumbnail.png" /></div>
+			<p>
+				<span class="title"><a href="http://www.fabrikamshipping.com" target="_blank">FabrikamShipping SaaS</a></span><br />					
+				FabrikamShipping SaaS is a full end to end sample scenario which demonstrates how to use the Windows Azure for exposing an application as a service. It features a number of advanced tasks such as developing long running processes, automated SQL Azure and Hosted Services provisioning, PayPal API integration, self-service federation and access control rules provisioning, account activation and social providers integration, Multi-tenancy, email notifications, MVC and Windows Identity Foundation integration, secure REST services via OAuth2, and much more. 
+				<br />
+				<br />Visit the FabrikamShipping home page at <a href="http://www.fabrikamshipping.com">http://www.fabrikamshipping.com</a>: there you will be able to interact with a live instance of the demo and download the full source code of the solution. 
+			</p>
+		</li>
+		<li class="clearBoth"></li>
+	</ul>
+</div>
+<#@ include file="Master.Footer.include.tt" #>

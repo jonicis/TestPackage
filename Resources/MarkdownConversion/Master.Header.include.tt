@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Learn Windows Azure Training Kit - Home</title>
+    <link rel="Stylesheet" type="text/css" media="all" href="styles/master.css" />
+</head>
+<body>
+    <div id="outerWrapper">
+        <div id="wrapper" class="landingPage getStartedPage">
+            <div id="whiteBkgdStrip">
+            </div>
+            <div class="header">
+                <div class="mainHomepageTitle">
+				</div>
+				<div class="nav-menu-header">
+					<div class="AspNet-Menu-Horizontal" id="ctl00_TopNavMenu">
+						<#						
+						if (Content.CustomProperties.ContainsKey("GithHubRepository"))
+						{#>
+						<ul class="AspNet-Menu" style="position: absolute; top: 0; right: 0; border: 0;z-index:9999;">
+							<li class="AspNet-Menu-Leaf">
+								<span id="github-btn" class="github-btn">
+								  <a id="gh-btn" title="Fork this repo in GitHub" href="<#=Content.CustomProperties["GithHubRepository"]#>" target="_blank" class="gh-btn">
+									<span class="gh-ico"></span>
+									<span id="gh-text" class="gh-text">Fork</span>
+								  </a>								  
+								</span>								
+							</li>
+							<li class="AspNet-Menu-Leaf">
+								<span id="github-btn" class="github-btn github-watchers">
+								  <a id="gh-btn" title="Watch this repo in GitHub" href="<#=Content.CustomProperties["GithHubRepository"]#>" target="_blank" class="gh-btn">
+									<span class="gh-ico"></span>
+									<span id="gh-text" class="gh-text">Watch</span>
+								  </a>								  
+								</span>
+							</li>
+						</ul>
+						<#
+						}
+						#>
+						<ul class="AspNet-Menu">
+							<li class="AspNet-Menu-Leaf AspNet-Menu-Selected">
+								<a id="leftMenu" class="AspNet-Menu-Link AspNet-Menu-Selected" href="#">Content</a>
+							</li>
+							<li class="AspNet-Menu-Leaf">
+								<a id="rightMenu" class="AspNet-Menu-Link" href="Source">Setup</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+            </div>		
+            <div class="contentWrapper">
+			<a name="top"></a>

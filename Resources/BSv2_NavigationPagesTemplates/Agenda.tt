@@ -1,0 +1,419 @@
+﻿<#@ template language="C#" debug="True" #> <#@ output extension="htm" #> <#@ assembly
+name="System.dll" #> <#@ assembly name="System.Core.dll" #> <#@ assembly name="ContentFramework.Model.dll"
+#> <#@ import namespace="ContentFramework.Model" #> <#@ import namespace="System.Linq"
+#> <#@ property name="Package" processor="PropertyProcessor" #> <# var currentPage
+= "Agenda"; #> <#@ include file="Master.Header.include.tt" #>
+<div class="genericInnerWrapper">
+    <h1>
+        Training Kit Agenda</h1>
+    <p>
+        The Windows Azure Training Kit can be used for instructor led training workshops.
+        There are three different agendas provided in this training kit you can use for
+        hosting a training workshop.</p>
+    <div id="agendas">
+        <div id="1-day-agenda">
+            <table cellpadding="0" cellspacing="0">
+                <tr valign="top">
+                    <th>
+                        <h2>
+                            Title</h2>
+                    </th>
+                    <th style="width: 150px;">
+                        <h2>
+                            Content Type</h2>
+                    </th>
+                </tr>
+                <tr valign="top" class="tableSubtitle">
+                    <td>
+                        <h2>
+                            Day 1</h2>
+                    </td>
+                    <td>
+                        <br />
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Presentations.htm#WindowsAzureOverview">
+                            <p>
+                                Windows Azure Overview</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Presentation</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Labs.htm#IntroToWindowsAzureLabVS2010">
+                            <p>
+                                Introduction to Windows Azure</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Hands-on Lab</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Presentations.htm#WindowsAzureCompute">
+                            <p>
+                                Windows Azure Compute</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Presentation</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Labs.htm#BuildingASPNETAppsWithWindowsAzure">
+                            <p>
+                                Building ASP.NET Applications with Windows Azure</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Hands-on Lab</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Presentations.htm#IntroductionToSQLAzureDatabases">
+                            <p>
+                                Introduction to SQL Azure Databases</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Presentation</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Labs.htm#IntroToSQLAzureForVS2010Developers">
+                            <p>
+                                Introduction to SQL Azure</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Hands-on Lab</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Presentations.htm#WindowsAzureStorage">
+                            <p>
+                                Windows Azure Storage</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Presentation</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Labs.htm#ExploringWindowsAzureStorageVS2010">
+                            <p>
+                                Exploring Windows Azure Storage</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Hands-on Lab</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Presentations.htm#IdentityAndAccessControl">
+                            <p>
+                                Identity and Access Control</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Presentation</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Labs.htm#IntroToACS2">
+                            <p>
+                                Introduction to the Windows Azure Access Control Service</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Hands-on Lab</p>
+                    </td>
+                </tr>
+                <!-- DAY 2 AGENDA -->
+                <tr valign="top" class="tableSubtitle">
+                    <td>
+                        <h2>
+                            Day 2</h2>
+                    </td>
+                    <td>
+                        <br />
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Presentations.htm#WindowsAzureServiceBus">
+                            <p>
+                                Windows Azure Service Bus</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Presentation</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Labs.htm#DeployingApplicationsinWindowsAzureVS2010">
+                            <p>
+                                Deploying Applications in Windows Azure</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Hands-on Lab</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Presentations.htm#BuildingDeviceAndCloudApplications">
+                            <p>
+                                Building Device and Cloud Applications</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Presentation</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Labs.htm#WindowsAzureAndPassiveFederation2010">
+                            <p>
+                                Federated Authentication in a Windows Azure Web Role Application</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Hands-on Lab</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Presentations.htm#WindowsAzureAdvancedScenarios">
+                            <p>
+                               Windows Azure Advanced Scenarios</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Presentation</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Labs.htm#AdvancedWebAndWorkerRoles">
+                            <p>
+                                Advanced Web and Worker Roles</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Hands-on Lab</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Presentations.htm#DebuggingAndTroubleshootingWindowsAzureApplications">
+                            <p>
+                               Debugging and Troubleshooting Windows Azure Applications</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Presentation</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Presentations.htm#BuildingLooselyCoupledAppsInWindowsAzure">
+                            <p>
+                               Building Loosely Coupled Apps In Windows Azure</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Presentation</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Presentations.htm#SecuringConnectingAndScaling">
+                            <p>
+                               Securing, Connecting, and Scaling in Windows Azure</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Presentation</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Presentations.htm#WindowsAzureApplicationLifecycle">
+                            <p>
+                               Windows Azure Application Lifecycle</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Presentation</p>
+                    </td>
+                </tr>
+                <!-- DAY 3 AGENDA -->
+                <tr valign="top" class="tableSubtitle">
+                    <td>
+                        <h2>
+                            Day 3</h2>
+                    </td>
+                    <td>
+                        <br />
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Presentations.htm#ApplicationScenarios">
+                            <p>
+                               Application Scenarios</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Presentation</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Presentations.htm#HadoopInWindowsAzure">
+                            <p>
+                               Hadoop In Windows Azure</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Presentation</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Presentations.htm#BuildingScalableWebAppsWithWindowsAzure">
+                            <p>
+                               Building Scalable Web Apps with Windows Azure</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Presentation</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Labs.htm#BuildingAppsWithCacheService">
+                            <p>
+                                Building Windows Azure Applications with the Caching Service</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Hands-on Lab</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Presentations.htm#BuildingGlobalAndHighlyAvailableApps">
+                            <p>
+                               Building Global and Highly Available Services</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Presentation</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Labs.htm#WindowsAzureTrafficManager">
+                            <p>
+                                Windows Azure Traffic Manager</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Hands-on Lab</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Presentations.htm#BuildingSocialGamesWithWindowsAzure">
+                            <p>
+                               Building Social Games with Windows Azure</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Presentation</p>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td>
+                        <a href="Presentations.htm#NodeJSOnWindowsAzure">
+                            <p>
+                               Node.JS on Windows Azure</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Presentation</p>
+                    </td>
+                </tr>
+                <!--<tr valign="top">
+                    <td>
+                        <a href="Labs.htm#BuildingSocialGames">
+                            <p>
+                                Building a Social Game with Windows Azure</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Hands-on Lab</p>
+                    </td>
+                </tr>-->
+                <tr valign="top">
+                    <td>
+                        <a href="Presentations.htm#DeliveringNotificationsWithWindowsAzure">
+                            <p>
+                               Delivering Notifications with Windows Azure</p>
+                        </a>
+                    </td>
+                    <td>
+                        <p>
+                            Presentation</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<#@ include file="Master.Footer.include.tt" #>
