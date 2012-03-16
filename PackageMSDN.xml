@@ -48,6 +48,7 @@
 	  <Thumbnail>Assets\Resources\WinAzureDeployPlatFlagLogo85x64.png</Thumbnail>
       <Labs>
 	    <Lab>git@github.com:jonicis/TestLab.git</Lab>
+		<Lab>git@github.com:microsoft-dpe/HOL-IntroToWindowsAzure.git</Lab>
       </Labs>
       <Demos>      
       </Demos>
