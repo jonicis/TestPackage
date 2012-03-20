@@ -50,6 +50,9 @@
 	    <Lab>git@github.com:jonicis/TestLab.git</Lab>
 		<Lab>git@github.com:microsoft-dpe/HOL-IntroToWindowsAzure.git</Lab>
       </Labs>
+	  <Tutorials>
+	    <Tutorial>git@github.com:jonicis/TestTutorial.git</Tutorial>
+      </Tutorials>
       <Demos>      
       </Demos>
       <Presentations></Presentations>
